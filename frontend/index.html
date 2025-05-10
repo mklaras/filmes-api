@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cinema Collection | Catálogo de Filmes</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1>
+      <i class="fas fa-film"></i> Cinema Collection
+    </h1>
+    
+    <div class="form-container">
+      <h2><i class="fas fa-plus-circle"></i> Adicionar Novo Filme</h2>
+      <form id="movieForm">
+        <div class="form-grid">
+          <div class="input-group">
+            <label for="title">Título do Filme</label>
+            <input type="text" id="title" placeholder="Ex: O Poderoso Chefão" required>
+          </div>
+          
+          <div class="input-group">
+            <label for="year">Ano de Lançamento</label>
+            <input type="number" id="year" placeholder="Ex: 1972" required>
+          </div>
+          
+          <div class="input-group">
+            <label for="director">Diretor</label>
+            <input type="text" id="director" placeholder="Ex: Francis Ford Coppola" required>
+          </div>
+        </div>
+        
+        <button type="submit" class="btn-primary">
+          <i class="fas fa-save"></i> Adicionar Filme
+        </button>
+      </form>
+    </div>
+    
+    <div class="movies-container">
+      <h2><i class="fas fa-list"></i> Catálogo de Filmes</h2>
+      <ul id="moviesList">
+        <!-- Os filmes serão inseridos aqui via JavaScript -->
+      </ul>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
